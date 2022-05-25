@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From currency</th>
+            <th>To currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input id="nhap1" type="text"></td>
+            <td><select id="vao1" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+            </td>
+            <td><select id="ra1" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+            </td>
+            <td><input onclick="doi_tien()" type="button" value="convert"></td>
+        </tr>
+        <tr>
+            <td id="xuat"><label></label></td>
+        </tr>
+
+    </table>
+    <script>
+        function doi_tien(){
+            var nhap = parseInt(document.getElementById('nhap1').value);
+            var vao = document.getElementById('vao1').value;
+            var ra = document.getElementById('ra1').value;
+            var xuat1;
+            if( vao == "USD" && ra =="USD") {xuat1="Result:" + nhap + "$"}
+            if( vao == "USD" && ra =="VND") {xuat1="Result:" + (nhap*23000) + "Đ"}
+            if( vao == "VND" && ra =="USD") {xuat1="Result:" + (nhap/23000) + "$"}
+            if( vao == "VND" && ra =="VND") {xuat1="Result:" + nhap + "Đ"}
+            document.getElementById("xuat").innerHTML=xuat1;
+        }
+    </script>
+</body>
+</html>
