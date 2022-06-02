@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var thang = {
+            // thuộc tính
+            name: 'thang',
+            age: 20,
+            addres: 'gio linh',
+            gender: 'male',
+            //phương thức
+            relax: function(){
+                console.log('choi game')
+            },
+            work: function(){
+                console.log('dau giai')
+            },
+            info: function(){
+                //dùng this để gọi đến thuộc tính
+                console.log('ten' + this.name)
+                console.log('age' + this.age)
+                console.log('gender' + this.gender)
+                //dùng this để gọi tới phương thức
+                this.relax();
+                this.work();
+              
+            },
+        }
+        //truy cập thuộc tính
+        //name
+        console.log(thang.name)
+        //age
+        console.log(thang.age)
+        //gender
+        console.log(thang.gender)
+        //gọi| truy cập phương thức
+        //thang.relax();
+        //thang.work();
+        thang.info();
+        //đặt giá trị thuộc tính
+        //age: 20 -> 25
+        thang.age = 25;
+
+        //name: thang -> phi
+        thang.name = 'phi';
+        console.log(thang);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var number = parseInt(prompt("Nhập số cần check "));
+       songuyento (number)
+       
+        function songuyento(number) {
+            var dem = 0; // đếm số ước của số đang check
+            var songuyento  = false;
+
+            if (number == 0) {
+                alert(number + " không là số nguyên tố")
+            } else {
+                for (var i = 1; i <= number; i++) {
+                    if (number % i == 0) {
+                        dem += 1;
+                    }
+                }
+
+                if (dem == 2) {
+                    songuyento  = true
+                }
+
+                if (songuyento ) {
+                    alert(number + " là số nguyên tố")
+                } else {
+                    alert(number + " không là số nguyên tố")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

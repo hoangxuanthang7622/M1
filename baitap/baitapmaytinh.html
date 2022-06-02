@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  <input type="text" id="so" value="">
+    ​
+        <select id="phep_tinh" onchange=" xu_ly_phep_tinh() ">
+            <option value="+">Cong</option>
+            <option value="-">Tru</option>
+            <option value="*">Nhan</option>
+            <option value="/">CHia</option>
+        </select>
+    ​
+       <input type="button" value="1" id="so_1" onclick=" xu_ly_so_1() ">
+       <input type="button" value="2" id="so_2" onclick=" xu_ly_so_2() ">
+       <input type="button" value="+" id="cong" onclick=" xu_ly_cong() ">
+       <input type="button" value="=" id="bang" onclick=" xu_ly_bang() ">
+    ​
+       <script>
+           /*
+           
+           */
+    ​
+           var a = 5;
+           var b = 4;
+           var sosanh = a > b ;//true
+    ​
+           var year = 1990;
+           var chiaHet4     = year % 4 == 0;    //true
+           var chiaHet100   = year % 100 == 0;  //true
+           var chiaHet400   = year % 400 == 0;  //true
+    ​
+        //    if( chiaHet4 ){
+        //         if( year % 100 == 0){
+        //             if( year % 400 == 0  ){
+        //                 console.log('Nam nhuan')
+        //             }
+        //         }
+        //    }
+            if( chiaHet4 == true && chiaHet100 == true && chiaHet400 == true   ) {
+                console.log('Nam nhuan');
+            }else{
+                console.log('Nam khong nhuan');
+            }
+            
+           function xu_ly_phep_tinh(){
+    ​
+                
+    ​
+               var phep_tinh = document.getElementById('phep_tinh').value;//
+               switch (phep_tinh) {
+                   case '+':
+                       
+                       break;
+                    case '-':
+                    
+                    break;
+                   default:
+                       break;
+               }
+           }
+    ​
+           function xu_ly_so_1(){
+                var so = document.getElementById('so').value;
+                so = so + 1;
+                //dua vao o input
+                document.getElementById('so').value = so;
+           }
+           function xu_ly_so_2(){
+                var so = document.getElementById('so').value;
+                so = so + 2;
+                //dua vao o input
+                document.getElementById('so').value = so;
+           }
+           function xu_ly_cong(){
+                var so = document.getElementById('so').value;
+                so = so + '+';
+                //dua vao o input
+                document.getElementById('so').value = so;
+           }
+           function xu_ly_bang(){
+                var so = document.getElementById('so').value;
+                var ketqua = eval( so ); // 1 + 2 => 3
+                //dua vao o input
+                document.getElementById('so').value = ketqua;
+           }
+    ​
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- //bai1
+        // function alertMassage(hi){
+        // alert('xinchao')
+       
+        // } alertMassage('xinchao')
+     //bai2 -->
+     <script>
+    //     function tang(so){
+    //         return so+1
+    //     }
+
+    //  var number = tang(5);//6
+
+    //  console.log(number);
+    //  console.log( tang(9) );
+    //  console.log( tang(89) );
+     //bai3
+    //  function xuli(a,b){
+    //      if (a > b ){
+    //          alert('so a lon hon b')
+    //      }
+    //      else{
+    //          return a + b;
+    //      } 
+
+    //  }
+
+
+
+
+    
+    //  var ketqua =  xuli(1,3);
+    //  alert(ketqua)
+    //bai 4
+//     function addNumbers() {
+//     firstNum = 4;
+//     secondNum = 8;
+//     result = firstNum + secondNum;
+//     return result;
+// }
+// result = 0;
+// result = addNumbers(); 
+// alert(result);
+//bài 5
+let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+function check_star(star) {
+    let index_star1 = 0;
+    let result = "";
+    for (let i = 0; i < star1.length; i++) {
+        if (star == star1[i]) {
+            index_star1 = i;
+            for(let j = 0; j < star2.length; j++) {
+                if (index_star1 == j) {
+                    result = star2[j];
+                    return result;
+                } else {
+                    result = "Không tìm thấy chòm sao"
+                    return result;
+                }
+            }
+        } else {
+            result = "Không tìm thấy sao";
+            return result;
+        }
+    }
+
+}
+let star = prompt("Nhập vào ngôi sao: ")
+document.write(check_star(star));
+//     </script>
+// </body>
+// </html>

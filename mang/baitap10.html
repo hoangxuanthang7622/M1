@@ -10,7 +10,15 @@
 
 <body>
     <script>
-        
+        var number = [1, 4, 10, 8, 9];
+        var max = number[0]
+        for (var i = 0; i < number.length; i++) {
+            if (max < number[i]) {
+                max = number[i]
+            } 
+        }
+        console.log(max);
+
     </script>
 </body>
 

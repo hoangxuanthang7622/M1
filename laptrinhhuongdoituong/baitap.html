@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*
+        var TEN_LOP = funnction(){
+            //thuộc tính
+            this.TEN_THUOC_TINH_1 = '';
+            this.TEN_THUOC_TINH_2 = '';
+            //phương thức
+            this.TEN_PHUONG_THUC_1 = function(){
+            
+            }
+            this.TEN_PHUONG_THUC_2 = function(){
+            
+            }
+        }
+        */
+        var Rectangle = function(){
+            //thuộc tính
+            this.chieudai = 0;
+            this.chieurong = 0;
+            //phuong thuc
+            this.dientich = function(){
+                var kq = this.chieudai * this.chieurong;
+                return kq
+            }
+            this.chuvi = function(){
+                var kq = (this.chieudai + this.chieurong) * 2
+                return kq
+            }
+            this.hienthi = function(){
+
+            }
+        }
+        // khoi tao doi tuong
+            var hcn = new Rectangle();
+        //dat gia tri thuoc tinh 
+        hcn.chieudai = 20;
+        hcn.chieurong = 10;
+        //goi phuong thuc
+        var dientich = hcn.dientich()
+        console.log(dientich)
+        var chuvi = hcn.chuvi()
+        console.log(chuvi)
+    </script>
+</body>
+</html>
