@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*
+        var TEN_LOP = funnction(){
+            //thuộc tính
+            this.TEN_THUOC_TINH_1 = '';
+            this.TEN_THUOC_TINH_2 = '';
+            //phương thức
+            this.TEN_PHUONG_THUC_1 = function(){
+            
+            }
+            this.TEN_PHUONG_THUC_2 = function(){
+            
+            }
+        }
+        */
+       var Battery = function(){
+           //thuoc tinh
+           this.energy = 0;
+           //phuong thuc
+           /*
+           set: thiet lap
+           get: lay
+           setTENTHUOCTINH : gán giá trị cho thuộc tính đó
+           getTENTHUOCTINH : trả về giá trị thuộc tính đó  
+           */
+           this.setEnergy = function(ts_engry){
+            this.energy = ts_engry
+           }
+           this.getEnergy = function(){
+            return this.energy;
+           }
+           this.decreaseEnegry = function(){
+
+           }
+       }
+       //khoi tao doi tuong
+            var batte = new Battery();
+        //goi phuong thuc đặt giá trị thuộc tính
+            batte.setEnergy( 100 );
+        //gọi thuộc tính trả về thuộc tinh engry
+        console.log(batte.getEnergy());
+        console.log(batte);
+
+        
+      
+            
+        
+
+    </script>
+</body>
+</html>

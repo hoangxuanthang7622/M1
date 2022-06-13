@@ -1,0 +1,38 @@
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    //vẽ đường thẳng
+    ctx.moveTo(20, 0);
+    ctx.lineTo(20, 30);//x,y
+    ctx.stroke();
+    //ve duong tron
+    ctx.beginPath();
+    ctx.arc(95, 50, 40 ,  0,    2   *   Math.PI);
+    //      x    y   r  sAngle eAngle
+    ctx.stroke();
+    //ve chu
+    ctx.font = "30px Arial";
+ctx.fillText("Cu Tệu",10,50);
+
+ctx.font = "30px Arial";
+ctx.strokeText("Cu Tệu",10,50);
+//ve hinh chu nhat
+ctx.fillStyle = '#fa4b2a';
+    var x = 10;
+    var y = 40;
+    ctx.fillRect(x, y, 50, 50);
+
+    setInterval( function(){
+        //xoa hinh cu
+        ctx.clearRect(x, y, 50, 50);
+
+        x += 10;
+        y += 10;
+
+        //ve hinh
+        ctx.fillRect(x, y, 50, 50);
+
+    }, 1000 );
+</script>
