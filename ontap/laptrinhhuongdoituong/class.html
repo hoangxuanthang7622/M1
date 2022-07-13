@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var TEN_LOP = fuction(){
+            //thuộc tính
+            this.THUOC_TINH_1 = VALUE_1;
+            this.THUOC_TINH_2 = VALUE_2; 
+            //phương thức
+            this.phuongthuc1 = fuction () {}
+            this.phuongthuc2 = fuction () {}
+        }
+        */
+    //     var person = function () {
+    //         //thuộc tính
+    //         this.name = '';
+    //         this.age = 0;
+    //         //phương thức
+    //         this.learn = function () {
+    //             return this.name + ' đang code'
+    //         },
+    //         this.work = function () {
+
+    //         },
+    //         this.info = function () {
+    //             console.log(this.name);
+    //             console.log(this.learn());
+    //         }        
+    //    }
+    //     //khởi tạo đối tượng
+    //     var thang = new person();
+    //     console.log(thang)
+    //     //gán giá trị thuộc tính
+    //     thang.name = 'cường'
+    //     thang.age = 30
+    //     //truy cập thuộc tính
+    //     console.log(thang.name)
+    //     console.log(thang.age)
+    //     //truy cập phương thức
+    //     console.log(thang.learn())
+    //     console.log(thang.work())
+    //     //in ra đối tượng
+    //     console.log(thang)
+
+
+
+
+
+
+
+//bán kính
+        // var circle = function(){
+        //     //thuộc tính
+        //     this.radius = 0.0;
+        //     this.color = '';
+        //     //phương thức
+        //     this.circle = function(){
+
+        //     },
+        //      this.getRadius = function(){
+        //         return this.radius
+        //     },
+        //      this.getArea = function(){
+        //         return this.radius * this.radius * Math.PI
+        //     },
+        //     this.perimeter = function(){
+        //         return this.radius * 2 * Math.PI
+        //     }
+        // }
+        // var circle1 = new circle();
+        // circle1.radius = 5;
+        // circle1.color = 'red';
+        // console.log(circle1.perimeter())
+
+
+        /////// d=2*r=> r=d/2   r*r=d/2*d/2=d*d/4  đường kính
+        var circle = function(){
+            //thuộc tính
+            this.diameter = 0.0;
+            this.color = '';
+            //phương thức
+            this.circle = function(){
+
+            },
+             this.getRadius = function(){
+                return this.diameter
+            },
+             this.getArea = function(){
+                return ((this.diameter * this.diameter) / 4 ) * Math.PI
+            },
+            this.perimeter = function(){
+                return this.diameter * Math.PI
+            }
+        }
+        var circle1 = new circle();
+        circle1.diameter = 10;
+        circle1.color = 'red';
+        console.log(circle1.getArea())
+
+
+    </script>
+</body>
+
+</html>

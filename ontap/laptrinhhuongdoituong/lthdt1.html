@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //đối tượng
+        //thuộc tính
+        //phương thức
+        var thang = {
+            name: 'thang',
+            age: 20,
+            learn: function() {
+               return 'learn';
+            },
+            work: function() {
+                return 'work';
+
+                
+            },
+
+        };
+        console.log(thang)
+    //truy cập thuộc tính
+    //name
+        console.log(thang.name)
+    //age
+        console.log(thang.age)
+ 
+    //truy cập phương thức
+   console.log(thang.learn());
+   thang.work();
+
+   //thay đổi name và age, in lại đối tượng thang
+   thang.name = 'cường';
+   thang.age = 25;
+   console.log(thang)
+
+    
+    </script>
+</body>
+</html>

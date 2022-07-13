@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai1
+        // var myColor = ['red','green','white','black'];
+        // myColor.join()
+        // document.write(myColor)
+        //bai2
+        // var num = parseInt(prompt());
+        // var str = num.toString();
+        // var result = [str[0]];
+
+        // for (var x = 1; x < str.length; x++) {
+        //     if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+        //         result.push('-', str[x]);
+        //     } else {
+        //         result.push(str[x]);
+        //     }
+        // }
+        // console.log(result.join(''));
+
+        //bai 3
+        // var str = 'c';
+        // var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        // var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        // var result = [];
+
+        // for (var x = 0; x < str.length; x++) {
+        //     if (UPPER.indexOf(str[x]) !== -1) {
+        //         result.push(str[x].toLowerCase());
+        //     }
+        //     else if (LOWER.indexOf(str[x]) !== -1) {
+        //         result.push(str[x].toUpperCase());
+        //     }
+        //     else {
+        //         result.push(str[x]);
+        //     }
+        // }
+        // console.log(result.join(''));
+
+
+
+        //bt tìm giá trị lớn nhất
+        // var numbers = [1,3,5,7,8,10];
+        // var max = numbers[0];
+        // var index = 0;
+        // for (var i = 1; i < numbers.length; i++){
+        //     if (numbers[i] > max ){
+        //         max = numbers[i];
+        //         index = i;
+        //     }
+        // }
+        // alert(max)
+
+
+        // var numbers = [2,5,6,8,54,33,2,1,5,6];
+        // for( var i = 0; i < numbers.length; i++){
+        //     if ( numbers[i] >= 10){
+        // console.log(numbers[i])
+
+        //     }
+        // }
+
+
+        //     var number = [1, 2, 3, 4, 5, 10, 6, 7, 8, 9];
+        //     var max = number[0];
+        //     var bien = 0;
+        //     for (var i = 0; i < number.length; i++) {
+        //         if (number[i] > max) {
+        //             max = number[i];
+        //             bien = i
+        //         }
+        //     }
+        //    alert(max)
+        //     alert(bien)
+
+        // var number1 = [12,34,5,77,45,32,4,8,9,2];
+        // var max = number1[0];
+        // var tb = 0;
+        // var tong = 0;
+        // for (var i = 0; i < number1.length; i++){
+        //     tong += number1[i]
+        //     if (number1[i] > max){
+        //         max = number1[i]
+        //     }
+        //     tb = tong / number1.length
+        // }
+        // alert(max)
+        // alert(tb)
+
+        // var mang = ['code', 'gym', 'co5', 45, 22, 'k1', 78];
+        // mang.reverse().join()
+        // // var mang1 = []
+        // // for (var i = mang.length -1; i >= 0; i--) {
+        // //     mang1.push(mang[i])
+        // // }
+        // document.write(mang)
+
+
+        var numbers = [];
+        for ( var i = 1; i < 11; i++){
+            numbers.push(i)
+        }
+        var tim = 5;
+        for ( var j = 0; j < numbers.length; j++){
+            if(numbers[j] == tim ){
+                alert(tim + 'có tron mảng')
+                break;
+            }
+
+        }
+
+
+
+        console.log(numbers)
+    </script>
+</body>
+
+</html>

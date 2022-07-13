@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function cong(a, b) {
+            return a + b
+
+        } function tru(a, b) {
+            return a - b
+
+        } function nhan(a, b) {
+            return a * b
+
+        } function chia(a, b) {
+            return a / b
+        }
+        function maytinh(a, b, pheptinh) {
+            var ketqua;
+            switch (pheptinh) {
+
+                case 'cong':
+                    ketqua = cong( a, b)
+                    break;
+                case 'tru':
+                    ketqua = tru(a , b)
+                    break;
+                case 'nhan':
+                    ketqua = nhan(a , b)
+                    break;
+                case 'chia':
+                    ketqua = chia(a , b)
+                    break;
+                default:
+                    break;
+            }
+            return ketqua
+
+        }
+
+        console.log('cong', maytinh(7, 5, 'cong'));
+        console.log('tru', maytinh(7, 5, 'tru'));
+        console.log('nhan', maytinh(7, 5, 'nhan'));
+        console.log('chia', maytinh(7, 5, 'chia'));
+
+    </script>
+</body>
+
+</html>

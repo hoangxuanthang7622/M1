@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt('nhập số thứ nhất'));
+        var b = parseInt(prompt('nhập số thứ hai'));
+        var maytinh = {
+            sothunhat: 0,
+            sothuhai: 0,
+            cong: function () {
+                return this.sothunhat + this.sothuhai
+            }, tru: function () {
+                return this.sothunhat - this.sothuhai
+
+            }, nhan: function () {
+                return this.sothunhat * this.sothuhai
+
+            }, chia: function () {
+                return this.sothunhat / this.sothuhai
+
+            },
+        }
+        //gán giá trị cho thuộc tính
+        maytinh.sothunhat = a;
+        maytinh.sothuhai = b;
+        //gọi phương thức
+        console.log(maytinh.cong())
+        console.log(maytinh.tru())
+        console.log(maytinh.nhan())
+        console.log(maytinh.chia())
+    </script>
+</body>
+
+</html>

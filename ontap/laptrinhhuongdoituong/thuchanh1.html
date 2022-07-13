@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     var Pin = function () {
+        //         this.energy = 0;
+
+        //         this.setEnergy = function (energy) {
+        //             this.energy = energy;
+        //         }
+        //         this.getEnergy = function () {
+        //             return this.energy
+        //         }
+        //         this.decreaseEnergy = function () {
+        //             if(this.energy > 0){
+        //                 this.energy--
+        //             }        
+        //         }
+        //     }
+        //     var Den = function (battery) {
+        //         this.status = false;
+        //         this.battery = battery;
+        //         this.FlashLamp = function () {
+
+        //         }
+        //         this.setBattery = function (battery) {
+        //             this.battery = battery
+        //         }
+        //         this.getBatteryInfo = function () {
+        //             return this.battery
+        //         }
+        //         this.light = function () {
+
+        //         }
+        //         this.turnOn = function () {
+        //             this.status = true;
+
+        //         }
+        //         this.turnOff = function () {
+        //             this.status = false;
+        //         }
+        //     }
+        //     var Den1 = new Den();
+        //     var Pin1 = new Pin();
+        //     // Den1.setEnergy(100);
+        //    Pin1.setEnergy(100);
+
+        //    console.log(Pin1)
+
+
+
+
+
+
+        function Apple(weight) {
+            this.weight = weight
+            this.decrease = function () {
+                 this.weight-=1
+            }
+            this.isEmpty = function () {
+                if(this.weight==0){
+                    return true;
+                }else{
+                    return false
+                }
+            }
+            this.getWeight = function () {
+                return " cân nặng của táo là : "+this.weight
+            }
+        }
+
+        this.Human = function (name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+
+            this.isMale = function () {
+                if(this.gender=='Nam'){
+                    return true
+                }else{
+                    return false
+                }
+            }
+            this.setGender = function (gender) {
+                 this.gender = gender
+            }
+            this.getGender = function () {
+                return this.gender;
+            }
+            this.checkApple = function (Apple) {
+                return true
+            }
+            this.eat = function () {
+                this.weight+=1;
+
+            }
+            this.say = function () {
+                return this.name+" ăn táo";
+            }
+            this.getName = function () {
+                return this.name
+            }
+            this.setName = function (name) {
+
+            }
+            this.getWeight = function () {
+                return "cân nặng "+this.name+" là:"+this.weight
+            }
+            this.setWeight = function (weight) {
+
+            }
+        }
+        var apple2 = new Apple(10)
+        console.log(apple2.getWeight());
+        var human2 = new Human('Adam','Nam',50)
+        // human2.setGender('nam');
+        console.log(human2.getGender());
+        // console.log(human2.isMale())
+        console.log(human2.say())
+        human2.eat();
+        console.log(human2.getWeight());
+        apple2.decrease();
+        console.log(apple2.getWeight())
+        var human3 = new Human('Eva','nữ',45)
+        console.log(human3.getGender())
+        // console.log(human3.isMale())
+        console.log(human3.say())
+        human3.eat();
+        console.log(human3.getWeight());
+        apple2.decrease();
+        console.log(apple2.getWeight())
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

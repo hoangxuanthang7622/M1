@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //vòng lặp for:
+        //khởi tạo
+        //điều kiện
+        //bước nhảy
+        // for (var i = 1; i<=10; i++){
+        //     if ( i % 2 == 0){
+        //         console.log(i)
+        //     }
+        // }
+        // var x = 5
+        // var y = 4
+        // var luythua = 1
+        // for (var i = 1; i <= y; i++) {
+        //     luythua *= x
+        // }
+        // console.log(luythua)
+
+        //vòng lặp while
+        // var i = 1;      //khởi tạo
+        // while (i <= 10) {   //điều kiện
+        //     if (i % 2 == 0) {    //thực hiện đoạn mã
+        //         console.log(i)
+        //     }
+        //     i++     //bước nhảy(thực hiện sau vòng lặp)
+
+        // }
+
+
+
+        //vòng lặp do while
+        // var i = 1;    //khởi tạo
+        // do {
+        //     if( i % 2 == 0){      //thực hiện đoạn mã 
+        //         console.log(i)
+        //     }
+        //     i++    //bước nhảy
+        // }while( i<= 10)     //điều kiện
+
+
+
+        // for (var i = 1; i <= 10; i++){
+        //     if(i == 3 || i == 5){
+        //         continue
+        //     }
+        //     if ( i == 9){
+        //         break
+        //     }
+
+        //     console.log(i)
+        // }
+
+
+
+        //    for (var i = 2; i <= 10; i++){
+        //        for(var j = 2; j <= 10; j++){
+        //         var kq = i*j
+        //         console.log(i +' * ' + j  +' = '  + kq)
+        //        }  
+        //    }
+
+        //   for (var i = 1; i < 100; i++){
+        //     if (i == 99){
+        //           alert(i + ' đã hoàn thành')
+
+        //         } document.write(i + '<br>') 
+        //   }
+
+
+
+
+        // var nhietdo = prompt('Nhập nhiệt độ');
+        // if ( nhietdo > 100){
+        //     alert('vui lòng giảm nhiệt độ')
+        // }else if (nhietdo < 20 ){
+        //     alert('vui lòng tăng nhiệt độ')
+        // }
+        // else{
+        //     alert('nhiệt độ bình thường')
+        // }
+
+
+
+        // var  a = 0 , b = 0, c = 0
+        //       var fibonacci = "";//1 1 2 3 5 8 13 21 34
+        //       for (var i=0; i<20;i++){
+        //           if(i==0){
+
+        //               a=1
+        //               c=1
+        //               fibonacci += a+ " "
+        //           }else{
+
+        //               a= b + c // a=34 b=21 c=34
+        //               b = c
+        //               c = a
+        //               fibonacci += a+ " "
+
+        //               // 
+        //           }
+        //       }
+        //       document.write(fibonacci)
+
+        // var a = 0, b = 0, c = 0
+        // var fibonacci = []
+        // for (var i = 0; i < 20; i++) {
+        //     if (i == 0) {
+        //         a = 1
+        //         c = 1
+        //         fibonacci.push(a)
+        //     } else {
+        //         a = b + c
+        //         b = c
+        //         c = a
+        //         fibonacci.push(a)
+        //         if (fibonacci[i] % 5 == 0) {
+        //             document.write(fibonacci[i] + '<br>')
+        //         }
+        //     }
+        // }
+
+
+
+        var a = 0, b = 0, c = 0;
+        var fibonacci = []
+        for (var i = 0; i < 20; i++) {
+            if (i == 0) {
+                a = 1;
+                c = 1;
+                fibonacci.push(a);
+            } else {
+                a = b + c;
+                b = c;
+                c = a;
+                fibonacci.push(a);
+                var kq =  fibonacci += fibonacci[i];
+            
+                } 
+
+              
+            } alert(kq)
+            
+       
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</html>

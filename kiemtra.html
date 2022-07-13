@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script>
+        // câu 1
+        // function findAvg(mang) {
+        //     var diemtrungbinh = 0
+        //     var tong = 0
+        //     for (var i = 0; i < mang.length; i++) {
+        //         tong = tong + mang[i]
+        //     }
+        //     return diemtrungbinh = tong / mang.length
+        // }
+        // var mang = [1,2,3,4,5]
+        // console.log(findAvg(mang))
+
+        // câu 2
+        // function insertNumberToArray(a, X, index) {
+        //     for (var i = 0; i < a.length; i++) {
+        //         if (index < 0 || index > a.length) {
+        //             return a;
+        //         }
+        //         else {
+        //             a[index] = X
+        //             return a
+        //         }
+        //     }
+        // }
+        // var a = [1, 2, 3, 4, 5];
+        // console.log(insertNumberToArray(a, 8, 2));
+
+
+        //câu 3
+        // function sumOfListPrime(x) {
+        //     var uoc = 0;
+        //     var dem = 0;
+        //     var sum = 0;
+        //     for (var i = 2; i < 1000; i++) {
+        //         if (dem < x) {
+        //             for (var j = 1; j <= i; j++) {
+        //                 if (i % j == 0) {
+        //                     uoc++;
+        //                 }
+        //             }
+        //             if (uoc == 2) {
+        //                 sum += i;
+        //             }
+        //             dem++;
+        //             uoc = 0;
+        //         } else {
+        //             break;
+        //         }
+        //     }
+        //     return sum;
+        // }
+        // var x = Number(prompt("Nhập số X"));
+        // document.write("Tổng các số nguyên tố là: " + sumOfListPrime(x));
+
+
+        //câu 4
+        class Rectangle{
+        constructor(x, y, width, height, color){
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+        render(){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = this.color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+      }
+  var hcn = new Rectangle(10,10,400,200,'#ff0000')
+  hcn.render();
+    </script>
+</body>
+
+</html>

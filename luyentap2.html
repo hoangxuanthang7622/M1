@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//    var doC = prompt('nhap do C');
+//    doF = doC  *  9/5 + 32 ;
+//    alert(doF + 'độ F')
+
+
+    // var m = prompt('nhập m');
+    // feet = m * 3.2808;
+    // alert(feet + ' feet')
+
+
+    // var a = prompt('nhập cạnh a');
+    // var dientichhv = a*a;
+    // alert(dientichhv)
+
+
+    // var a = prompt('nhập cạnh a');
+    // var b = prompt('nhập cạnh b');
+    // var dientichchunhat = a*b;
+    // alert(dientichchunhat)
+
+
+    // var a = prompt('nhập cạnh a');
+    // var b = prompt('nhập cạnh b');
+    // var Stamgiacvuong = a*b/2;
+    // alert(Stamgiacvuong)
+
+
+    // var a = prompt('nhập a');
+    // var b = prompt('nhập b');
+    // if (a == 0 && b == 0){
+    //     alert('phương trình vô số nghiệm')
+    // }
+    // else if (a == 0 && b < 0 || b > 0){
+    //     alert('phương trình vô nghiệm')
+    // }
+    // else if (a > 0 || a < 0){
+    //     alert ('phương trình có nghiệm duy nhất X = '+ -b/a)
+    // }
+
+
+    var a = parseInt(prompt('nhập a')) ;
+    var b =  parseInt(prompt('nhập b'));
+    var c = parseInt(prompt('nhập c'));
+    var denta = b*b - 4*a*c;
+    if (denta < 0){
+        alert('phương trình vô nghiệm')
+    }
+    else if (denta == 0){
+        alert('phương trình có nghiệm kép x1 = x2 = ' + -b/2*a)
+    }
+    else {
+        alert('phương trình có 2 nghiệm phân biệt x1 = ' + (-b + Math.sqrt(denta))/2*a + ' và x2 = '  + (-b - Math.sqrt(denta))/2*a)
+    }
+</script>
+</body>
+</html>

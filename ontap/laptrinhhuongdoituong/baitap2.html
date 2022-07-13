@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Temperature = function (doc) {
+            this.DoC=doc;
+            // this.getDoC =function(){
+            //     return this.DoC
+            // }
+            // this.setDoC =function(a){
+            //     this.DoC = a
+            // }
+            this.DoCsangDoF = function () {
+                return (this.DoC * (9/5)+32)
+            }
+            this.DoCsangDoK = function () {
+                return (this.DoC + 273.15)
+            }
+        }
+        var Temperature2 = new Temperature(3);
+        // Temperature2.setDoC(2);
+        console.log(Temperature2.DoCsangDoF()) 
+        console.log(Temperature2.DoCsangDoK())
+
+
+
+    </script>
+</body>
+
+</html>

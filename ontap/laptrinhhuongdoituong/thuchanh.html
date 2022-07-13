@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+
+        // var Date = function (day, month, year) {
+        //     //thuộc tính
+        //     this.day = day;//4 -> 5
+        //     this.month = month;//7
+        //     this.year = year;//2021 -> 2022
+        //     //phương thức
+        //     this.getDay = function () {
+        //         return this.day
+        //     }
+
+        //     this.getMonth = function () {
+        //         return this.month
+        //     }
+
+        //     this.getYear = function () {
+        //         return this.year
+        //     }
+        //     this.setDay = function (day) {
+        //         this.day = day
+        //     }
+        //     this.setMonth = function (month) {
+        //         this.month = month
+
+        //     }
+        //     this.setYear = function (year) {
+        //         this.year = year
+        //     }
+        //     this.setDate = function (day, month, year) {
+        //         this.day = day
+        //         this.month = month
+        //         this.year = year
+
+        //     }
+        // }
+        // //khởi tạo đối tượng
+        // var MyDate = new Date(4, 7, 2021);
+        // MyDate.setDay(5)
+        // MyDate.setMonth(7)
+        // MyDate.setYear(2022)
+        // var day = MyDate.getDay()
+        // var month = MyDate.getMonth()
+        // var year = MyDate.getYear()
+
+        // console.log(MyDate)
+        // alert(day + '/' + month + '/' + year )
+
+
+
+
+        var Rectangle = function () {
+            //thuộc tính
+            this.chieudai = 0;
+            this.chieurong = 0;
+            //phương thức
+            this.dientich = function () {
+                return this.chieudai * this.chieurong
+            }
+            this.chuvi = function () {
+                return (this.chieudai + this.chieurong) * 2
+            }
+
+            this.render = function () {
+                var canvas = document.getElementById("DemoCanvas");
+                if (canvas.getContext) {
+                    var ctx = canvas.getContext('2d');
+                    ctx.fillStyle = '#fa4b2a';    // color of fill
+                    ctx.fillRect(10, 40, this.chieudai, this.chieurong); // create rectangle  
+                }
+            }
+        }
+        //khởi tạo đối tượng
+        var Rectangle2 = new Rectangle()
+        //đặt giá trị thuộc tính
+        Rectangle2.chieudai = prompt('nhập chiều dài')
+        Rectangle2.chieurong = prompt('nhập chiều rộng')
+        //gọi phương thức tính chu vi
+        console.log(Rectangle2.chuvi());
+        //gọi phương thức tính  diện tích
+        console.log(Rectangle2.dientich());
+        Rectangle2.render()
+
+
+        //khởi tạo đối tương
+        var Rectangle3 = new Rectangle();
+        //gán giá trị thuộc tính
+        Rectangle3.chieudai = 40;
+        Rectangle3.chieurong = 20;
+        //gọi phương thức tính chu vi
+        console.log(Rectangle3.chuvi())
+        //gọi phương thức tính diện tích
+        console.log(Rectangle3.dientich())
+
+        
+
+    </script>
+</body>
+
+</html>

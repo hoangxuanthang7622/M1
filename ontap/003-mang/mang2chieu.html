@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var book1 = ['toán','lý','hoá'];   
+        // var book2 = ['văn','sử','địa'];
+        // var tusach = [
+        //              ['toán','lý','hoá'],// 0  
+        //             //  0      1     2
+        //              ['văn','sử','địa']  // 1  
+        //             //  0      1    2              
+        //             ];
+        // // tusach[0].push('Tiếng anh');
+        // tusach[0][3] = 'tieng anh'
+        // console.log(tusach)
+
+        //duyệt mảng đa chiều
+         
+        // for( var i = 0; i< tusach.length; i++){
+        //     for( var j = 0; j < tusach[i].length; j++){
+        //         console.log(tusach[i][j])
+        //     }
+        // }
+
+
+    // var number = [];
+    // for( var i = 0; i < 3; i++){
+    //     number[i] = []
+    //     for ( var j = 0; j < 4; j++){
+    //         number[i][j]= j
+           
+    //     }
+    // }
+    //          console.log(number)
+
+
+    var tienganh = ['Hello','Bye','Love'];
+    var tiengviet = ['Chao','Tam Biet','Iu'];
+    var tim = prompt('Nhap tu can tra');
+    var index = tienganh.indexOf(tim)
+    
+    if (index == -1){
+        alert('phần tử không có trong mảng')
+    }else{
+        alert(tiengviet[index])
+    }
+
+
+
+
+    </script>
+</body>
+</html>

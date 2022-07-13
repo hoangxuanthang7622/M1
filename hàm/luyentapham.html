@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai1
+        // function alertMessage() {
+        //     alert('xin chao')
+        // }
+        // alertMessage();
+
+        // function number(a){
+        //     a++;
+        //     console.log(a)
+        // }
+        // number(2)
+
+        // function numbers (a,b){
+        //     if( a > b){
+        //         alert(a + 'lon hon' + b)
+        //     }else {
+        //         alert(a + b)
+        //     }
+        // }
+        // numbers(5,4)
+        // function addNumbers() {
+        //     firstNum = 4;
+        //     secondNum = 8;
+        //     result = firstNum + secondNum;
+        //     return result;
+        // }
+        // result = 0;
+        // alert(result)
+        // result = addNumbers();
+        // alert(result)
+
+
+        // var mang = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+        // var mang2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major'  ,'Leo'];
+        // function thamso(a){
+        //     for ( var i = 0; i < mang.length; i++){
+        //         if (mang[i] == a){
+        //           alert( mang2[i])
+
+        //         }
+        //     }
+        // }
+        // thamso('Polaris');
+
+        //luyện tập hàm 2
+        //bài 1
+        //     function tinhbinhphuong(a){
+
+        //         return a * a
+        //     }
+
+        // console.log(tinhbinhphuong(5))
+        //bài 2
+        // function Shinhtron(r){
+        //     return Math.round(Math.PI * r*r  * 100) / 100
+
+        // }
+        // function chuvihinhtron(r){
+        //     return  2 * Math.PI * r
+        // }
+        // console.log( Shinhtron(3),chuvihinhtron(3))
+
+        //bài 3
+        // function tinhgiaithua(a) {
+        //     if (a === 0) {
+        //         return 1;
+        //     }
+        //     return a * tinhgiaithua(a - 1);
+
+        // }
+        // console.log(tinhgiaithua(5));
+
+        //bài 4
+        // function number(a) {
+        //     if( a >= 0 || a < 0){
+        //      return true
+
+        //     }else{
+        //       return false
+        //     }
+        // }
+
+        // console.log( number(5))
+
+        //bài 5
+        // function numbers(a,b,c) {
+        // var min = a
+        //     if( a > b){
+        //         min = b
+        //     }else if (b>c){
+        //         min = c
+        //     }
+        //     return min
+        // }  
+        // console.log(numbers(9,18,8))  
+
+        //bài 6
+        // function numbers(a) {
+        //     if( a > 0){
+        //         return true
+        //     }else{
+        //         return false
+        //     }
+        // }
+        // console.log(numbers(-1))
+
+        //bài 7
+
+        //     function songuyen(a,b) {
+        //         var temp = a;
+        //        var a1 = b;
+        //        var b1 = temp;
+        //         return [a1, b1];
+        //     }
+        //    console.log( songuyen(7,4))
+
+        //bài 8
+        //     function number(a) {
+        //         var a1 = new Array()
+        //         for( var i = a.length - 1; i >= 0; i--){
+        //             a1.push(a[i])
+        //         }
+        //         return a1
+        //     }
+        //    console.log( number([7,4,2,45,6,4,3,4,2,'sa','d']))
+
+        //bài 9
+        function numbers(a, b) {
+            var count = 0;
+
+            for (var i = 0; i < a.length; i++) {
+                if (a[i] == b) {
+                    count++
+                }
+            }
+            if (count > 0) {
+                return count
+            }
+            return -1
+        }
+        var kiemtra = numbers([3, 2, 4, 6, 6, 6, 6, 7, 7, 7, 8, 1], 0)
+        if (kiemtra > 0) {
+            console.log(kiemtra)
+        } else {
+            console.log(-1)
+        }
+    </script>
+</body>
+
+</html>

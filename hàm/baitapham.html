@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function tongsole(array) {
+            var tong = 0;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    tong += array[i]
+                }
+            }
+
+            return tong
+        }
+
+        console.log(tongsole(numbers))
+
+        function timsolonnhat(array) {
+            var max = array[0]
+            for (var j = 0; j < array.length; j++) {
+                if (array[j] > max) {
+                    max = array[j]
+                }
+            }
+            return max
+        }
+        console.log(timsolonnhat(numbers))
+
+        function timsonhonhat(array) {
+            var min = array[0];
+            for (var k = 0; k < array.length; k++) {
+                if (array[k] < min) {
+                    min = array[k]
+                }
+            }
+            return min
+        }
+        console.log(timsonhonhat(numbers))
+
+
+
+        function func1(a) {
+            if (a == 2)
+                return 2;
+            return a * func1(a - 1);
+        }
+
+        console.log(func1(5))
+
+     
+
+        var a1 = 5;
+        var b1 = 10;
+        function swap(a, b) {
+            var temp = a;
+            a = b;
+            b = temp;
+
+            a1 = a;
+            b1 = b;
+        }
+        swap(a1, b1);
+        document.write("a = " + a1 + ", b = " + b1);
+
+    </script>
+</body>
+
+</html>
